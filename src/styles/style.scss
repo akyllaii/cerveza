@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Beiruti:wght@200..900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+  font-family: 'Beiruti', sans-serif;
+  font-weight: 400;
+}
+
+.container{
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+}
+button{
+  border: none;
+  cursor: pointer;
+}
+@import "header";
+@import "main";
+@import "form";

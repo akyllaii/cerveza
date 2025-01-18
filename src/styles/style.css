@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Beiruti:wght@200..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+  font-family: "Beiruti", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.header {
+  margin: 2vw 0;
+}
+.header__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-column-gap: 2vw;
+     -moz-column-gap: 2vw;
+          column-gap: 2vw;
+}
+.header__btn {
+  font-size: 24px;
+  color: #000;
+  border-radius: 14px;
+  background: rgba(254, 213, 8, 0.8);
+  padding: 4px 12px;
+}
+.header__btn:hover {
+  background: #fed508;
+  padding: 6px 14px;
+}
+
+.main {
+  position: relative;
+  z-index: 1;
+}
+.main__back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Places video behind other elements */
+  overflow: hidden;
+}
+.main__video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10vw;
+     -moz-column-gap: 10vw;
+          column-gap: 10vw;
+}
+.main__title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 110px;
+  color: #162030;
+}
+.main__text {
+  font-size: 32px;
+  color: #000;
+}
+.main__location {
+  margin: 2.3vh 0;
+  cursor: pointer;
+}
+.main__location:hover {
+  border: 2px solid black;
+  padding: 7px;
+  border-radius: 5px;
+}
+.main__circles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 0.8vw;
+     -moz-column-gap: 0.8vw;
+          column-gap: 0.8vw;
+}
+.main__circle {
+  width: 45px;
+  height: 45px;
+  background: #965f06;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__album {
+  font-size: 43px;
+  margin-top: 8vh;
+  font-weight: 500;
+}
+.main__link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.main__link:hover {
+  border: 2px solid black;
+  padding: 7px;
+  border-radius: 5px;
+}
+.main__box {
+  margin-top: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 3vw;
+     -moz-column-gap: 3vw;
+          column-gap: 3vw;
+}
+.main__icon {
+  background: rgba(232, 230, 226, 0.58);
+  padding: 25px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.main__icon:hover {
+  background: transparent;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.main__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__side {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg); /* Rotate text */
+  display: inline-block;
+  font-size: 64px;
+  color: #162030;
+  font-family: "Bebas Neue", sans-serif;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+
+.form__arrow {
+  margin-top: 5vh;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  font-size: 20px;
+}
+.form__title {
+  font-size: 64px;
+  text-align: center;
+}
+.form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 2vh;
+}
+.form__inp {
+  border-radius: 21px;
+  border: none;
+  width: 446px;
+  height: 71px;
+  font-size: 28px;
+  padding-left: 1vw;
+  background: rgba(255, 206, 11, 0.6);
+}
+.form__btn {
+  font-size: 28px;
+  border: 2px solid #000;
+  border-radius: 21px;
+  width: 118px;
+  height: 71px;
+  background: #fc0;
+}

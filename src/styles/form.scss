@@ -1,0 +1,53 @@
+.form{
+  &__arrow{
+    margin-top: 5vh;
+    cursor: pointer;
+    display: flex;
+    column-gap: 5px;
+    font-size: 20px;
+  }
+  &__title{
+    font-size: 64px;
+    text-align: center;
+  }
+  &__inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2vh;
+  }
+  &__inp{
+    font-size: 28px;
+    border: none;
+    width: 446px;
+    height: 71px;
+    background: rgba(255, 206, 11, 0.6);
+    padding: 0 1vw;
+    border-radius: 21px;
+  }
+  &__block{
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    justify-content: space-between;
+    border-radius: 21px;
+    border: none;
+    width: 446px;
+    height: 71px;
+    background: rgba(255, 206, 11, 0.6);
+  }
+  &__password{
+    font-size: 28px;
+    border: none;
+    background: transparent;
+  }
+  &__btn{
+    font-size: 28px;
+    border: 2px solid #000;
+    border-radius: 21px;
+    width: 118px;
+    height: 71px;
+    background: #fc0;
+  }
+}
